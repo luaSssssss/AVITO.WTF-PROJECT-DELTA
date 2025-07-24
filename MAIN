@@ -674,6 +674,15 @@ local speedh = tabs.Other:AddLeftGroupbox('Character')
 local worldh = tabs.Other:AddRightGroupbox('World')
 local vmisc = tabs.Other:AddRightGroupbox('Misc')
 
+aim:AddButton({
+    Text = 'CLICKONES LOADSILENT',
+    DoubleClick = false,
+    Tooltip = 'CLICK ONES TO LOAD SILENT',
+    Func = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/luaSssssss/AVITO.WTF-PROJECT-DELTA/refs/heads/main/Savito.wtf'),true))()
+    end,
+})
+
 aim:AddToggle('Ammo distance check', {
     Text = 'Ammo distance check',
     Default = false,
